@@ -1,0 +1,15 @@
+<h1>use</h1>
+user: {{ user }}
+<hr>
+
+<form method="post">
+	{% csrf_token %}
+
+	{% for coupon in coupon_list%}
+		<li>
+			<input type="radio" name="coupon" id="{{ coupon.id }}" value="{{ coupon.id }}">
+			<label for="{{ coupon.id }}">{{ coupon.coupon.title }}</label>
+		</li>
+	{% endfor %}
+	<input type="submit" name="submit" value="submit">
+</form>

@@ -1,0 +1,10 @@
+<h1>display</h1>
+user: {{ user }}
+<hr>
+
+{% for coupon in coupon_list %}
+	<li>
+		{{ coupon.coupon.title }}
+		{{ coupon.coupon.description }}
+	</li>
+{% endfor %}

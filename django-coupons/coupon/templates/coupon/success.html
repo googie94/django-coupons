@@ -1,0 +1,7 @@
+<h1>success</h1>
+
+<p>user: {{ coupon.user }}</p>
+<p>title: {{ coupon.coupon.title }}</p>
+<p>used_at: {{ coupon.used_at }}</p>
+
+<a href="{% url 'coupon:coupon_home' %}">back</a>
